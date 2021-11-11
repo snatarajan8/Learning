@@ -39,3 +39,22 @@ More precisely, given inputs xl through xn, the output o(x1, . . . , xn) with we
 
 ### Perceptron training rule
 
+One way to learn an acceptable weight vector is to begin with random
+weights, then iteratively apply the perceptron to each training example, modifying the perceptron 
+weights whenever it misclassifies an example. This process is
+repeated, iterating through the training examples as many times as needed until
+the perceptron classifies all training examples correctly. Weights are modified at
+each step according to the perceptron training rule, which revises the weight wi
+associated with input xi according to the rule
+
+wi = wi + dwi
+
+where
+
+dwi = q(t-o)xi
+
+Here t is the target output for the current training example, o is the output generated
+by the perceptron, and q is a positive constant called the learning rate. The role
+of the learning rate is to moderate the degree to which weights are changed at
+each step. It is usually set to some small value (e.g., 0.1) and is sometimes made
+to decay as the number of weight-tuning iterations increases.
