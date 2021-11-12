@@ -58,3 +58,7 @@ by the perceptron, and q is a positive constant called the learning rate. The ro
 of the learning rate is to moderate the degree to which weights are changed at
 each step. It is usually set to some small value (e.g., 0.1) and is sometimes made
 to decay as the number of weight-tuning iterations increases.
+
+### Gradient descent
+
+### Delta rule
