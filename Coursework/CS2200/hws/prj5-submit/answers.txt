@@ -1,0 +1,29 @@
+CS 2200 Fall 2016
+Project 5
+Name:Shyam Natarajan
+GT Number:903047415
+
+Problem 1B
+----------
+1 CPU = 67.7s
+2 CPUs = 36.2s
+4 CPUs = 33.4s
+
+The relationship is not linear and begins to level off as we increase the number
+of CPUs since the program can only be parallelized a certain amount and past that
+number any additional CPUs do not make a difference.
+
+Problem 2B
+----------
+The shortest time slices may not be ideal because of the large overhead with
+multiple context switches and also large processes which maybe vital but take a
+long time to execute are repeatedly pushed to the back of the ready queue and
+are thereby delayed.
+
+Problem 3B
+----------
+The static priority is the best approximation of SJF. It is impossible for SJF
+to be implemented since there is no way to tell how long a CPU burst is going to
+be. However the static priority algorithm uses priority, which can be used as a
+heuristic to approximate the CPU burst time and hence be the most accurate
+approximation of SJF.
